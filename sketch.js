@@ -20,7 +20,7 @@ function draw() {
 //CENTRO
 
 push();
-  stroke(lerpColor(color('#FDAA27'), color('#E23051'), frameCount/200));
+  stroke(lerpColor(color('#FDAA27'), color('#E23051'), frameCount/150));
   strokeWeight(1);
 
   translate(width/2, height/2-91);
@@ -33,7 +33,7 @@ push();
 pop();
 
 push();
-  stroke(lerpColor(color('#FDAA27'), color('#E23051'), frameCount/200));
+  stroke(lerpColor(color('#FDAA27'), color('#E23051'), frameCount/150));
   strokeWeight(1);
 
   translate(width/2, height/2+91);
@@ -47,7 +47,7 @@ push();
 pop();
 
 push();
-  stroke(lerpColor(color('#FDAA27'), color('#E23051'), frameCount/200));
+  stroke(lerpColor(color('#FDAA27'), color('#E23051'), frameCount/150));
   strokeWeight(1);
 
   translate(width/2-91, height/2);
@@ -61,7 +61,7 @@ push();
 pop();
 
 push();
-  stroke(lerpColor(color('#FDAA27'), color('#E23051'), frameCount/200));
+  stroke(lerpColor(color('#FDAA27'), color('#E23051'), frameCount/150));
   strokeWeight(1);
 
   translate(width/2+91, height/2);

@@ -7,7 +7,7 @@ function preload(){
 function setup() {
   // put setup code here
   createCanvas(windowWidth, windowHeight);
-  background(109, 175, 166);
+  background(115, 180, 171);
   angleMode(DEGREES);
   frameRate(60);
 }
@@ -20,55 +20,55 @@ function draw() {
 //CENTRO
 
 push();
-  stroke(lerpColor(color('#FDAA27'), color('#E23051'), frameCount/150));
+  stroke(lerpColor(color('#FDAA27'), color('#E23051'), frameCount/130));
   strokeWeight(1);
 
   translate(width/2, height/2-91);
-  rotate(frameCount);
+  rotate(frameCount*sin(frameCount));
   translate(frameCount,0);
-  rotate(frameCount);
+  rotate(frameCount*cos(frameCount));
   translate(-10,frameCount);
 
   line( sin(frameCount)*50, cos(frameCount)*50 ,sin(0)*100, cos(0)*100);
 pop();
 
 push();
-  stroke(lerpColor(color('#FDAA27'), color('#E23051'), frameCount/150));
+  stroke(lerpColor(color('#FDAA27'), color('#E23051'), frameCount/130));
   strokeWeight(1);
 
   translate(width/2, height/2+91);
   rotate(180);
-  rotate(frameCount);
+  rotate(frameCount*sin(frameCount));
   translate(frameCount,0);
-  rotate(frameCount);
+  rotate(frameCount*cos(frameCount));
   translate(-10,frameCount);
 
   line( sin(frameCount)*50, cos(frameCount)*50 ,sin(0)*100, cos(0)*100);
 pop();
 
 push();
-  stroke(lerpColor(color('#FDAA27'), color('#E23051'), frameCount/150));
+  stroke(lerpColor(color('#FDAA27'), color('#E23051'), frameCount/130));
   strokeWeight(1);
 
   translate(width/2-91, height/2);
   rotate(270);
-  rotate(frameCount);
+  rotate(frameCount*sin(frameCount));
   translate(frameCount,0);
-  rotate(frameCount);
+  rotate(frameCount*cos(frameCount));
   translate(-10,frameCount);
 
   line( sin(frameCount)*50, cos(frameCount)*50 ,sin(0)*100, cos(0)*100);
 pop();
 
 push();
-  stroke(lerpColor(color('#FDAA27'), color('#E23051'), frameCount/150));
+  stroke(lerpColor(color('#FDAA27'), color('#E23051'), frameCount/130));
   strokeWeight(1);
 
   translate(width/2+91, height/2);
   rotate(90);
-  rotate(frameCount);
+  rotate(frameCount*sin(frameCount));
   translate(frameCount,0);
-  rotate(frameCount);
+  rotate(frameCount*cos(frameCount));
   translate(-10,frameCount);
 
   line( sin(frameCount)*50, cos(frameCount)*50 ,sin(0)*100, cos(0)*100);
